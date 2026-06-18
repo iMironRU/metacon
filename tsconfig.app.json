@@ -19,7 +19,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src", "ui", "engine/checkers.ts", "engine/contracts.ts", "engine/card.types.ts"]
 }

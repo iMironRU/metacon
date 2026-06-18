@@ -80,6 +80,68 @@
   border-color: #535bf2;
 }
 
+.links button {
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  background: #646cff;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.links button:hover { background: #535bf2; border-color: #535bf2; }
+
+.page {
+  min-height: 100dvh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.topbar-title { font-size: 0.9rem; opacity: 0.7; }
+.topbar-title code { font-size: 0.85rem; }
+.link-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  opacity: 0.8;
+  padding: 0.3rem 0.4rem;
+}
+.link-btn:hover { opacity: 1; }
+
+.page-body { display: flex; flex-direction: column; gap: 1.5rem; }
+.task { display: flex; flex-direction: column; gap: 0.5rem; }
+.task-title { margin: 0; font-size: 1.6rem; }
+.task-skill { margin: 0; opacity: 0.8; line-height: 1.45; }
+.task-scaffold {
+  margin-top: 0.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+@media (prefers-color-scheme: light) {
+  .topbar { border-bottom-color: rgba(0, 0, 0, 0.08); }
+  .task-scaffold { background: rgba(0, 0, 0, 0.02); border-color: rgba(0, 0, 0, 0.08); }
+}
+
 @media (prefers-color-scheme: light) {
   .card {
     background: rgba(0, 0, 0, 0.02);
